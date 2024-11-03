@@ -1,7 +1,7 @@
 
 
 /* Variables for colors */
-$primary-color: #6b6255; 
+$primary-color: #aa0000; 
 $secondary-color: #333;
 $light-background: #f9f9f9;
 $white: #fff;
@@ -9,6 +9,7 @@ $dark-gray: #333;
 $light-gray: #ddd;
 
 $primary: $primary-color; 
+$secondary: $secondary-color;
 
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
@@ -21,7 +22,11 @@ $primary: $primary-color;
 
 /* General Styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+
   margin: 0;
   padding: 0;
 }
@@ -42,26 +47,36 @@ header {
 
   .navbar-brand {
     font-size: 1.5rem;
+    margin-left: 16px;
     text-transform: uppercase;
   }
+}
+nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-  nav {
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
+    li {
+      display: inline;
+      margin-left: 20px;
+      font-size: .8em;
+      font-weight: bold;
+      
 
-      li {
-        display: inline;
-        margin-left: 20px;
-
-        a {
-          color: $dark-gray;
-          font-weight: 500;
-        }
+      a {
+        color: $dark-gray;
+        font-weight: 500;
       }
     }
   }
+}
+
+h4 {
+  font-size: 1rem;
+  margin-top: -10px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
 }
 
 /* Hero Section */

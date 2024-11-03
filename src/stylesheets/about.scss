@@ -1,21 +1,42 @@
+$primary-color: #aa0000; 
+$secondary-color: #333;
+
+
+
 /* About Page Styling */
 .about-page {
     padding: 2rem 0;
   }
   
   .about-page h1, .about-page h2 {
-    color: #6b6255;
+    color: $secondary;
   }
   
-  .about-page .team img {
+   .square {
     transition: transform 0.3s ease;
   }
   
-  .about-page .team img:hover {
+.square:hover {
     transform: scale(1.05);
   }
-  
-  .about-page .values i {
-    color: #6b6255; /* Icon color */
+
+.square-1, .square-3{
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.square-2{
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+
+.values i {
+    color: $primary; /* Icon color */
   }
+
+
+
+
+  
   

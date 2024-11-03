@@ -4,62 +4,73 @@
   <meta charset="UTF-8">
   <title>About Us - Mickey's Custom Labels</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="./stylesheets/main.scss">
+  
 </head>
 
 <body>
-  <!-- Header Section -->
-  <header class="sticky-top bg-white">
-    <div class="container d-flex justify-content-between align-items-center py-3">
-      <a href="index.html" class="navbar-brand font-weight-bold text-uppercase">Mickey's Custom Labels</a>
-      <nav>
-        <ul class="nav">
-          <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="products.html">Products</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+
+<!-- Header Section -->
+<header class="bg-white">
+  <div class="container d-flex flex-column align-items-center py-3">
+    <a href="index.html" class="navbar-brand font-weight-bold text-uppercase text-center">
+      <img src="images/mfdesign-logo.png" width="160px" alt="MFDesign Logo">
+    </a>
+    <h4 class="text-center text-uppercase">Custom Labels</h4>
+  </div>
+</header>
+<nav class="sticky-top bg-secondary text-white">
+  <ul class="nav justify-content-center">
+    <li class="nav-item"><a class="nav-link text-white text-uppercase" href="index.html">Home</a></li>
+    <li class="nav-item"><a class="nav-link text-white text-uppercase" href="products.html">Products</a></li>
+    <li class="nav-item"><a class="nav-link text-white text-uppercase" href="about.html">About</a></li>
+    <li class="nav-item"><a class="nav-link text-white text-uppercase" href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
   <!-- About Page Content -->
   <main class="about-page py-5">
     <div class="container">
       <!-- Introduction Section -->
       <section class="text-center mb-5">
-        <h1 class="font-weight-bold mb-4">About Mickey's Custom Labels</h1>
+        <h1 class="font-weight-bold mb-4">About <span class="text-primary">Mickey's</span> Custom Labels</h1>
         <p class="lead">Founded and operated by Mickey, a professional graphic designer and book editor, Mickey's Custom Labels is a passion project dedicated to crafting beautiful, high-quality custom stickers and labels. Mickey’s love for design shines through in each unique product.</p>
+      </section>
+
+      <!-- SVG Image Section -->
+      <section class="svg-image">
+        <img src="images/logo.png" alt="">
+        <img src="images/2246675.png" alt="">
       </section>
 
       <!-- Founder Section -->
       <section class="founder my-5 text-center">
-        <h2 class="font-weight-bold mb-4">Meet Mickey</h2>
-        <img src="images/mickey.jpg" class="rounded-circle mb-3" alt="Mickey" width="150" height="150">
-        <h5 class="font-weight-bold">Mickey Johnson</h5>
+        <h5 class="font-weight-bold">Mickey Friar</h5>
         <p>Founder, Graphic Designer & Book Editor</p>
         <p class="small">With years of experience as a professional graphic designer and editor, Mickey channels her creativity and passion into every label she crafts. Her mission is to empower brands, creators, and DIY enthusiasts to elevate their projects with custom designs.</p>
       </section>
 
       <!-- Values Section -->
       <section class="values my-5">
-        <h2 class="text-center font-weight-bold mb-4">Our Values</h2>
-        <div class="row text-center">
-          <div class="col-md-4">
+         <div class="row text-center">
+          <div class="square square-1 col-md-4 bg-primary text-white p-4 border border-white">
             <i class="fas fa-star fa-2x mb-3"></i>
             <h5 class="font-weight-bold">Quality</h5>
-            <p>Delivering top-notch quality in each label, crafted with precision and care.</p>
+            <p>Care is put into each label, ensuring the finished product is of great quality.</p>
           </div>
-          <div class="col-md-4">
+          <div class="square square-2 col-md-4 bg-primary text-white p-4 border border-white">
             <i class="fas fa-heart fa-2x mb-3"></i>
             <h5 class="font-weight-bold">Creativity</h5>
-            <p>Mickey’s designs are infused with creativity, adding a personal touch to every project.</p>
+            <p>Mickey’s creations are a reflection of her excitement for cooking and design.</p>
           </div>
-          <div class="col-md-4">
+          <div class="square square-3 col-md-4 bg-primary text-white p-4 border border-white">
             <i class="fas fa-smile fa-2x mb-3"></i>
-            <h5 class="font-weight-bold">Customer Delight</h5>
-            <p>Building connections with customers through meaningful, memorable designs.</p>
+            <h5 class="font-weight-bold">Reliability</h5>
+            <p>Designs are customized, printed, cut, and shipped on time with great quality.</p>
           </div>
         </div>
       </section>
