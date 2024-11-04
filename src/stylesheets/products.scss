@@ -1,9 +1,9 @@
 /* Basic styling for products page */
 .products-page {
-    padding: 2rem 0;
-  }
-  
-  /* Product Card Styling */
+  padding: 2rem 0;
+}
+
+/* Product Card Styling */
 /* Product Card Styling */
 .products-page {
   padding: 2rem 0;
@@ -60,13 +60,12 @@
 .btn-primary:hover {
   background-color: darken(#6b6255, 10%);
 }
- 
-  /* Pagination Styling */
-  .pagination .page-link {
-    color: #6b6255;
-  }
-  
-  .pagination .page-link:hover {
-    color: #333;
-  }
-  
+
+/* Pagination Styling */
+.pagination .page-link {
+  color: #6b6255;
+}
+
+.pagination .page-link:hover {
+  color: #333;
+}

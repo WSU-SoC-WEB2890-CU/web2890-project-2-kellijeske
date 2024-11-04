@@ -1,26 +1,23 @@
-
-
 /* Contact Page Styling */
 .contact-page {
-    padding: 2rem 0;
-  }
-  
-  .contact-page h4 {
-    margin-bottom: 1.5rem;
-  }
-  
-  .contact-page .form-control {
-    border-radius: 5px;
-    box-shadow: none;
-    border: 1px solid #ddd;
-  }
-  
-  .contact-page .btn-primary {
-    background-color: #6b6255;
-    border: none;
-  }
-  
-  .contact-page .btn-primary:hover {
-    background-color: darken(#6b6255, 10%);
-  }
-  
+  padding: 2rem 0;
+}
+
+.contact-page h4 {
+  margin-bottom: 1.5rem;
+}
+
+.contact-page .form-control {
+  border-radius: 5px;
+  box-shadow: none;
+  border: 1px solid #ddd;
+}
+
+.contact-page .btn-primary {
+  background-color: #6b6255;
+  border: none;
+}
+
+.contact-page .btn-primary:hover {
+  background-color: darken(#6b6255, 10%);
+}

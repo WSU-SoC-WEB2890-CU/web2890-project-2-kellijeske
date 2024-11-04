@@ -1,14 +1,12 @@
-
-
 /* Variables for colors */
-$primary-color: #aa0000; 
+$primary-color: #aa0000;
 $secondary-color: #333;
 $light-background: #f9f9f9;
 $white: #fff;
 $dark-gray: #333;
 $light-gray: #ddd;
 
-$primary: $primary-color; 
+$primary: $primary-color;
 $secondary: $secondary-color;
 
 @import "bootstrap/scss/bootstrap.scss";
@@ -16,9 +14,6 @@ $secondary: $secondary-color;
 @import "contact";
 @import "products";
 @import "about";
-
-
-
 
 /* General Styling */
 body {
@@ -60,9 +55,8 @@ nav {
     li {
       display: inline;
       margin-left: 20px;
-      font-size: .8em;
+      font-size: 0.8em;
       font-weight: bold;
-      
 
       a {
         color: $dark-gray;
@@ -81,7 +75,7 @@ h4 {
 
 /* Hero Section */
 .hero {
-  background-image: url('images/hero-image.jpg');
+  background-image: url("images/hero-image.jpg");
   background-size: cover;
   background-position: center;
   color: $white;

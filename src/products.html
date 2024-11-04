@@ -1,1010 +1,1318 @@
-
 <!DOCTYPE html>
+
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Mickey's Custom Labels</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index,follow">
-  <meta name="description" content="Custom Labels">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-  <link rel="stylesheet" href="./stylesheets/main.scss">
-</head>
-
-<body>  
-
-<!-- Header Section -->
-<header class="bg-white">
-  <div class="container d-flex flex-column align-items-center py-3">
-    <a href="index.html" class="navbar-brand font-weight-bold text-uppercase text-center">
-      <img src="images/mfdesign-logo.png" width="160px" alt="MFDesign Logo">
-    </a>
-    <h4 class="text-center text-uppercase">Custom Labels</h4>
-  </div>
-</header>
-<nav class="sticky-top bg-secondary text-white">
-  <ul class="nav justify-content-center">
-    <li class="nav-item"><a class="nav-link text-white text-uppercase" href="index.html">Home</a></li>
-    <li class="nav-item"><a class="nav-link text-white text-uppercase" href="products.html">Products</a></li>
-    <li class="nav-item"><a class="nav-link text-white text-uppercase" href="about.html">About</a></li>
-    <li class="nav-item"><a class="nav-link text-white text-uppercase" href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
-
-  <!-- Products Page Content -->
-  <main class="products-page py-5">
-    <div class="container">
-      <h1 class="text-center mb-5">Our Products</h1>
-      
-      <!-- Filter and Sort Section -->
-      <div class="row mb-4">
-        <div class="col-md-3">
-          <h5>Filters</h5>
-          <form>
-            <!-- Category Filter -->
-            <div class="form-group">
-              <label for="category">Category</label>
-              <select id="category" class="form-control">
-                <option>All Categories</option>
-                <option>Extract Labels</option>
-                <option>Honey Labels</option>
-                <option>Jam/Jelly Labels</option>
-                <option>Sugar Labels</option>
-              </select>
+  <head>
+    <meta charset="utf-8" />
+    <title>Mickey's Custom Labels</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="index,follow" name="robots" />
+    <meta content="Custom Labels" name="description" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./stylesheets/main.scss" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="bg-white">
+      <div class="container d-flex flex-column align-items-center py-3">
+        <a class="navbar-brand font-weight-bold text-uppercase text-center" href="index.html">
+          <img alt="MFDesign Logo" src="images/mfdesign-logo.png" width="160px" />
+        </a>
+        <h4 class="text-center text-uppercase">Custom Labels</h4>
+      </div>
+    </header>
+    <nav class="sticky-top bg-secondary text-white">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link text-white text-uppercase" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white text-uppercase" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link text-white text-uppercase" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white text-uppercase" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Products Page Content -->
+    <main class="products-page py-5">
+      <div class="container">
+        <h1 class="text-center mb-5">Our Products</h1>
+        <!-- Filter and Sort Section -->
+        <div class="row mb-4">
+          <div class="col-md-3">
+            <h5>Filters</h5>
+            <form>
+              <!-- Category Filter -->
+              <div class="form-group">
+                <label for="category">Category</label>
+                <select class="form-control" id="category">
+                  <option>All Categories</option>
+                  <option>Extract Label</option>
+                  <option>Honey Label</option>
+                  <option>Sugar Label</option>
+                  <option>Made In Label</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <!-- Product Grid -->
+          <div class="col-md-9">
+            <div class="row">
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="Extract Label"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/1x1.75 Chai Sugar.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Chai Sugar Label</h5>
+                    <p class="card-text label-type">Sugar Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2oz Boston Round</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits 2oz Boston Round"
+                      data-image="images/Label Thumbnails/1up/1x1.75 Chai Sugar.jpg"
+                      data-labeltype="Sugar Label"
+                      data-price="$0.65 / each"
+                      data-productname="Chai Sugar Label"
+                      data-size='1.5" x 2.25"'
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="Extract Label"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/1x1.75 Chocolate Sugar.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Chocolate Sugar Label</h5>
+                    <p class="card-text label-type">Sugar Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2oz Boston Round</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits Extract Label Container"
+                      data-image="images/Label Thumbnails/1up/1x1.75 Chocolate Sugar.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Extract Label"
+                      data-size="2 oz"
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="Extract Label"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/1x1.75 ChristmasCookie Sugar.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Christmas Cookie Sugar Label</h5>
+                    <p class="card-text label-type">Sugar Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2oz Boston Round</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits Extract Label Container"
+                      data-image="images/Label Thumbnails/1up/1x1.75 ChristmasCookie Sugar.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Extract Label"
+                      data-size="2 oz"
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="Extract Label"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/1x1.75 Cinnamon Sugar.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Cinnamon Sugar Label</h5>
+                    <p class="card-text label-type">Sugar Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2oz Boston Round</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits Extract Label Container"
+                      data-image="images/Label Thumbnails/1up/1x1.75 Cinnamon Sugar.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Extract Label"
+                      data-size="2 oz"
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="Extract Label"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/1x1.75 Cranberry Orange Sugar.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Cranberry Orange Sugar Label</h5>
+                    <p class="card-text label-type">Sugar Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2oz Boston Round</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits Extract Label Container"
+                      data-image="images/Label Thumbnails/1up/1x1.75 Cranberry Orange Sugar.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Extract Label"
+                      data-size="2 oz"
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="Extract Label"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/1x1.75 Gingerbread Sugar.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Gingerbread Sugar Label</h5>
+                    <p class="card-text label-type">Sugar Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2oz Boston Round</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits Extract Label Container"
+                      data-image="images/Label Thumbnails/1up/1x1.75 Gingerbread Sugar.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Extract Label"
+                      data-size="2 oz"
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="Extract Label"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/1x1.75 Grapefruit Sugar.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Grapefruit Sugar Label</h5>
+                    <p class="card-text label-type">Sugar Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2oz Boston Round</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits Extract Label Container"
+                      data-image="images/Label Thumbnails/1up/1x1.75 Grapefruit Sugar.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Extract Label"
+                      data-size="2 oz"
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="Extract Label"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/1x1.75 Lemon Sugar.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Lemon Sugar Label</h5>
+                    <p class="card-text label-type">Sugar Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2oz Boston Round</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits Extract Label Container"
+                      data-image="images/Label Thumbnails/1up/1x1.75 Lemon Sugar.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Extract Label"
+                      data-size="2 oz"
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="Extract Label"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/1x1.75 Lime Sugar.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Lime Sugar Label</h5>
+                    <p class="card-text label-type">Sugar Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2oz Boston Round</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits Extract Label Container"
+                      data-image="images/Label Thumbnails/1up/1x1.75 Lime Sugar.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Extract Label"
+                      data-size="2 oz"
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="Extract Label"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/1x1.75 Orange Sugar.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Orange Sugar Label</h5>
+                    <p class="card-text label-type">Sugar Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2oz Boston Round</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits Extract Label Container"
+                      data-image="images/Label Thumbnails/1up/1x1.75 Orange Sugar.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Extract Label"
+                      data-size="2 oz"
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="Extract Label"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/2.5x3.25 mason Cinnamon Sugar.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Cinnamon Sugar Label</h5>
+                    <p class="card-text label-type">Sugar Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2oz Boston Round</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits Extract Label Container"
+                      data-image="images/Label Thumbnails/1up/2.5x3.25 mason Cinnamon Sugar.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Extract Label"
+                      data-size="2 oz"
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="Extract Label"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/2.5x3.25 mason Vanilla Sugar.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Vanilla Sugar Label</h5>
+                    <p class="card-text label-type">Sugar Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2oz Boston Round</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits Extract Label Container"
+                      data-image="images/Label Thumbnails/1up/2.5x3.25 mason Vanilla Sugar.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Extract Label"
+                      data-size="2 oz"
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="Extract Label"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/4 oz Flip Top- Almond.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Almond Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.75"</p>
+                    <p class="card-text fits-container">Fits 4 oz Boston Round</p>
+                    <p class="card-text price">$0.78 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits Extract Label Container"
+                      data-image="images/Label Thumbnails/1up/4 oz Flip Top- Almond.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Extract Label"
+                      data-size="2 oz"
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="Extract Label"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/4 oz Flip Top- Cinnamon.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Cinnamon Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.75"</p>
+                    <p class="card-text fits-container">Fits 4 oz Boston Round</p>
+                    <p class="card-text price">$0.78 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits Extract Label Container"
+                      data-image="images/Label Thumbnails/1up/4 oz Flip Top- Cinnamon.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Extract Label"
+                      data-size="2 oz"
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="Extract Label"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/4 oz Flip Top- Madagacar-KentuckyStraightBurbon.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Vanilla Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.75"</p>
+                    <p class="card-text fits-container">Fits 4 oz Boston Round</p>
+                    <p class="card-text price">$0.78 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits Extract Label Container"
+                      data-image="images/Label Thumbnails/1up/4 oz Flip Top- Madagacar-KentuckyStraightBurbon.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Extract Label"
+                      data-size="2 oz"
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="Extract Label"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/4 oz Honey jar Cinnamon.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Cinnamon Honey Label</h5>
+                    <p class="card-text label-type">Honey Label</p>
+                    <p class="card-text size">2.5" x 4"</p>
+                    <p class="card-text fits-container">Fits 16 oz Boston Round</p>
+                    <p class="card-text price">$1.79 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits Extract Label Container"
+                      data-image="images/Label Thumbnails/1up/4 oz Honey jar Cinnamon.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Extract Label"
+                      data-size="2 oz"
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="Extract Label"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/4 oz Honey jar Lemon.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Lemon Honey Label</h5>
+                    <p class="card-text label-type">Honey Label</p>
+                    <p class="card-text size">2.5" x 4"</p>
+                    <p class="card-text fits-container">Fits 16 oz Boston Round</p>
+                    <p class="card-text price">$1.79 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits Extract Label Container"
+                      data-image="images/Label Thumbnails/1up/4 oz Honey jar Lemon.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Extract Label"
+                      data-size="2 oz"
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="Extract Label"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/4 oz Honey jar Orange.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Orange Honey Label</h5>
+                    <p class="card-text label-type">Honey Label</p>
+                    <p class="card-text size">2.5" x 4"</p>
+                    <p class="card-text fits-container">Fits 16 oz Boston Round</p>
+                    <p class="card-text price">$1.79 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits Extract Label Container"
+                      data-image="images/Label Thumbnails/1up/4 oz Honey jar Orange.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Extract Label"
+                      data-size="2 oz"
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="Extract Label"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/4 oz Honey jar Vanilla Bean.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Vanilla Honey Label</h5>
+                    <p class="card-text label-type">Honey Label</p>
+                    <p class="card-text size">2.5" x 4"</p>
+                    <p class="card-text fits-container">Fits 16 oz Boston Round</p>
+                    <p class="card-text price">$1.79 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits Extract Label Container"
+                      data-image="images/Label Thumbnails/1up/4 oz Honey jar Vanilla Bean.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Extract Label"
+                      data-size="2 oz"
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="2 oz Boston Round"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/Almond 2 oz BR.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Almond Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2 oz Boston Round Container</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits 2 oz Boston Round Container"
+                      data-image="images/Label Thumbnails/1up/Almond 2 oz BR.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Almond Extract Label"
+                      data-size='1.5" x 2.25"'
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="2 oz Boston Round"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/Burundi Vanilla 2 oz BR.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Vanilla Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2 oz Boston Round Container</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits 2 oz Boston Round Container"
+                      data-image="images/Label Thumbnails/1up/Burundi Vanilla 2 oz BR.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Vanilla Extract Label"
+                      data-size='1.5" x 2.25"'
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="2 oz Boston Round"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/CostaRican Vanilla 2 oz BR.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Vanilla Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2 oz Boston Round Container</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits 2 oz Boston Round Container"
+                      data-image="images/Label Thumbnails/1up/CostaRican Vanilla 2 oz BR.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Vanilla Extract Label"
+                      data-size='1.5" x 2.25"'
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="2 oz Extract"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/Extract-01.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Vanilla Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2 oz Boston Round</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits 2 oz Boston Round"
+                      data-image="images/Label Thumbnails/1up/Extract-01.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Vanilla Extract Label"
+                      data-size='1.5" x 2.25"'
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="2 oz Extract"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/Extract-02.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Cherry Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2 oz Boston Round</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits 2 oz Boston Round"
+                      data-image="images/Label Thumbnails/1up/Extract-02.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Cherry Extract Label"
+                      data-size='1.5" x 2.25"'
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="2 oz Extract"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/Extract-03.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Chocolate Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2 oz Extract Container</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits 2 oz Extract Container"
+                      data-image="images/Label Thumbnails/1up/Extract-03.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Chocolate Extract Label"
+                      data-size='1.5" x 2.25"'
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="2 oz Extract"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/Extract-04.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Christmas Cookie Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2 oz Extract Container</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits 2 oz Extract Container"
+                      data-image="images/Label Thumbnails/1up/Extract-04.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Christmas Cookie Extract Label"
+                      data-size='1.5" x 2.25"'
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="2 oz Extract"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/Extract-05.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Lemon Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2 oz Extract Container</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits 2 oz Extract Container"
+                      data-image="images/Label Thumbnails/1up/Extract-05.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Lemon Extract Label"
+                      data-size='1.5" x 2.25"'
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="2 oz Extract"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/Extract-06.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Orange Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2 oz Extract Container</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits 2 oz Extract Container"
+                      data-image="images/Label Thumbnails/1up/Extract-06.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Orange Extract Label"
+                      data-size='1.5" x 2.25"'
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="2 oz Extract"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/Extract-07.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Cinnamon Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2 oz Extract Container</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits 2 oz Extract Container"
+                      data-image="images/Label Thumbnails/1up/Extract-07.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Cinnamon Extract Label"
+                      data-size='1.5" x 2.25"'
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="2 oz Extract"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/Extract-08.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Blueberry Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2 oz Extract Container</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits 2 oz Extract Container"
+                      data-image="images/Label Thumbnails/1up/Extract-08.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Blueberry Extract Label"
+                      data-size='1.5" x 2.25"'
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="2 oz Extract"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/Extract-09.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Gingerbread Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2 oz Extract Container</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits 2 oz Extract Container"
+                      data-image="images/Label Thumbnails/1up/Extract-09.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Gingerbread Extract Label"
+                      data-size='1.5" x 2.25"'
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="2 oz Extract"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/Extract-10.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Salted Caramel Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2 oz Extract Container</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits 2 oz Extract Container"
+                      data-image="images/Label Thumbnails/1up/Extract-10.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Salted Caramel Extract Label"
+                      data-size='1.5" x 2.25"'
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="2 oz Extract"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/Extract-11.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Almond Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2 oz Extract Container</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits 2 oz Extract Container"
+                      data-image="images/Label Thumbnails/1up/Extract-11.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Almond Extract Label"
+                      data-size='1.5" x 2.25"'
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="2 oz Extract"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/Extract-12.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Mint Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2 oz Extract Container</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits 2 oz Extract Container"
+                      data-image="images/Label Thumbnails/1up/Extract-12.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Mint Extract Label"
+                      data-size='1.5" x 2.25"'
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="2 oz Extract"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/Extract-13.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Coconut Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2 oz Extract Container</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits 2 oz Extract Container"
+                      data-image="images/Label Thumbnails/1up/Extract-13.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Coconut Extract Label"
+                      data-size='1.5" x 2.25"'
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="2 oz Extract"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/Extract-14.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Banana Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2 oz Extract Container</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits 2 oz Extract Container"
+                      data-image="images/Label Thumbnails/1up/Extract-14.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Banana Extract Label"
+                      data-size='1.5" x 2.25"'
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="2 oz Extract"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/Extract-15.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Lime Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2 oz Extract Container</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits 2 oz Extract Container"
+                      data-image="images/Label Thumbnails/1up/Extract-15.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Lime Extract Label"
+                      data-size='1.5" x 2.25"'
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="2 oz Boston Round"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/Grapefruit 2 oz BR.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Grapefruit Extract Label</h5>
+                    <p class="card-text label-type">Extract Label</p>
+                    <p class="card-text size">1.5" x 2.25"</p>
+                    <p class="card-text fits-container">Fits 2 oz Boston Round Container</p>
+                    <p class="card-text price">$0.65 / each</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits 2 oz Boston Round Container"
+                      data-image="images/Label Thumbnails/1up/Grapefruit 2 oz BR.jpg"
+                      data-labeltype="Extract Label"
+                      data-price="$0.65 / each"
+                      data-productname="Grapefruit Extract Label"
+                      data-size='1.5" x 2.25"'
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <img
+                    alt="Extract Label"
+                    class="card-img-top"
+                    src="images/Label Thumbnails/1up/Made In Kitchen.jpg"
+                    style="width: 100%; height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Made in Kitchen Labels</h5>
+                    <p class="card-text label-type">Made In Label</p>
+                    <p class="card-text size">Any</p>
+                    <p class="card-text fits-container">Fits Any Container</p>
+                    <p class="card-text price">$0.65 / set of 4</p>
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-fits="Fits Any Container"
+                      data-image="images/Label Thumbnails/1up/Made In Kitchen.jpg"
+                      data-labeltype="Made In Labels"
+                      data-price="$0.65 / set of 4"
+                      data-productname="Made in Kitchen Labels"
+                      data-size="Any"
+                      data-target="#productModal"
+                      data-toggle="modal"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-          </form>
+          </div>
         </div>
-
-        <!-- Product Grid -->
-        <div class="col-md-9">
-          <div class="row">
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/1x1.75 Chai Sugar.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Chai Sugar Label</h5>
-      <p class="card-text label-type">Sugar Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/1x1.75 Chai Sugar.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/1x1.75 Chocolate Sugar.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Chocolate Sugar Label</h5>
-      <p class="card-text label-type">Sugar Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/1x1.75 Chocolate Sugar.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/1x1.75 ChristmasCookie Sugar.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/1x1.75 ChristmasCookie Sugar.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/1x1.75 Cinnamon Sugar.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/1x1.75 Cinnamon Sugar.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/1x1.75 Cranberry Orange Sugar.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/1x1.75 Cranberry Orange Sugar.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/1x1.75 Gingerbread Sugar.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/1x1.75 Gingerbread Sugar.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/1x1.75 Grapefruit Sugar.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/1x1.75 Grapefruit Sugar.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/1x1.75 Lemon Sugar.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/1x1.75 Lemon Sugar.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/1x1.75 Lime Sugar.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/1x1.75 Lime Sugar.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/1x1.75 Orange Sugar.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/1x1.75 Orange Sugar.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/2.5x3.25 mason Cinnamon Sugar.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/2.5x3.25 mason Cinnamon Sugar.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/2.5x3.25 mason Vanilla Sugar.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/2.5x3.25 mason Vanilla Sugar.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/3x1.75 Clamp JamaicaRumVanilla Sugar.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/3x1.75 Clamp JamaicaRumVanilla Sugar.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/3x1.75 Clamp Vanilla Sugar.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/3x1.75 Clamp Vanilla Sugar.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/4 oz Flip Top- Almond.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/4 oz Flip Top- Almond.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/4 oz Flip Top- Cinnamon.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/4 oz Flip Top- Cinnamon.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/4 oz Flip Top- Madagacar-GreyGoose.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/4 oz Flip Top- Madagacar-GreyGoose.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/4 oz Flip Top- Madagacar-KentuckyStraightBurbon.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/4 oz Flip Top- Madagacar-KentuckyStraightBurbon.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/4 oz Flip Top- Madagacar-Vodka.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/4 oz Flip Top- Madagacar-Vodka.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/4 oz Flip Top- Tahitian-CrownRoyal.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/4 oz Flip Top- Tahitian-CrownRoyal.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/4 oz Honey jar Cinnamon.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/4 oz Honey jar Cinnamon.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/4 oz Honey jar Lemon.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/4 oz Honey jar Lemon.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/4 oz Honey jar Orange.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/4 oz Honey jar Orange.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/4 oz Honey jar Vanilla Bean.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/4 oz Honey jar Vanilla Bean.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/Almond 2 oz BR.jpg" class="card-img-top" alt="2 oz Boston Round" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">2 oz Boston Round</h5>
-      <p class="card-text label-type">2 oz Boston Round</p>
-      <p class="card-text size">1.5" x 2.25"</p>
-      <p class="card-text fits-container">Fits 2 oz Boston Round Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/Almond 2 oz BR.jpg'
-              data-productname='2 oz Boston Round'
-              data-labeltype='2 oz Boston Round'
-              data-size='1.5" x 2.25"'
-              data-fits='Fits 2 oz Boston Round Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/Burundi Vanilla 2 oz BR.jpg" class="card-img-top" alt="2 oz Boston Round" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">2 oz Boston Round</h5>
-      <p class="card-text label-type">2 oz Boston Round</p>
-      <p class="card-text size">1.5" x 2.25"</p>
-      <p class="card-text fits-container">Fits 2 oz Boston Round Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/Burundi Vanilla 2 oz BR.jpg'
-              data-productname='2 oz Boston Round'
-              data-labeltype='2 oz Boston Round'
-              data-size='1.5" x 2.25"'
-              data-fits='Fits 2 oz Boston Round Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/CostaRican Vanilla 2 oz BR.jpg" class="card-img-top" alt="2 oz Boston Round" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">2 oz Boston Round</h5>
-      <p class="card-text label-type">2 oz Boston Round</p>
-      <p class="card-text size">1.5" x 2.25"</p>
-      <p class="card-text fits-container">Fits 2 oz Boston Round Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/CostaRican Vanilla 2 oz BR.jpg'
-              data-productname='2 oz Boston Round'
-              data-labeltype='2 oz Boston Round'
-              data-size='1.5" x 2.25"'
-              data-fits='Fits 2 oz Boston Round Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/Extract-01.jpg" class="card-img-top" alt="2 oz Extract" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">2 oz Extract</h5>
-      <p class="card-text label-type">2 oz Extract</p>
-      <p class="card-text size">1.5" x 2.25"</p>
-      <p class="card-text fits-container">Fits 2 oz Extract Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/Extract-01.jpg'
-              data-productname='2 oz Extract'
-              data-labeltype='2 oz Extract'
-              data-size='1.5" x 2.25"'
-              data-fits='Fits 2 oz Extract Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/Extract-02.jpg" class="card-img-top" alt="2 oz Extract" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">2 oz Extract</h5>
-      <p class="card-text label-type">2 oz Extract</p>
-      <p class="card-text size">1.5" x 2.25"</p>
-      <p class="card-text fits-container">Fits 2 oz Extract Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/Extract-02.jpg'
-              data-productname='2 oz Extract'
-              data-labeltype='2 oz Extract'
-              data-size='1.5" x 2.25"'
-              data-fits='Fits 2 oz Extract Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/Extract-03.jpg" class="card-img-top" alt="2 oz Extract" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">2 oz Extract</h5>
-      <p class="card-text label-type">2 oz Extract</p>
-      <p class="card-text size">1.5" x 2.25"</p>
-      <p class="card-text fits-container">Fits 2 oz Extract Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/Extract-03.jpg'
-              data-productname='2 oz Extract'
-              data-labeltype='2 oz Extract'
-              data-size='1.5" x 2.25"'
-              data-fits='Fits 2 oz Extract Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/Extract-04.jpg" class="card-img-top" alt="2 oz Extract" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">2 oz Extract</h5>
-      <p class="card-text label-type">2 oz Extract</p>
-      <p class="card-text size">1.5" x 2.25"</p>
-      <p class="card-text fits-container">Fits 2 oz Extract Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/Extract-04.jpg'
-              data-productname='2 oz Extract'
-              data-labeltype='2 oz Extract'
-              data-size='1.5" x 2.25"'
-              data-fits='Fits 2 oz Extract Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/Extract-05.jpg" class="card-img-top" alt="2 oz Extract" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">2 oz Extract</h5>
-      <p class="card-text label-type">2 oz Extract</p>
-      <p class="card-text size">1.5" x 2.25"</p>
-      <p class="card-text fits-container">Fits 2 oz Extract Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/Extract-05.jpg'
-              data-productname='2 oz Extract'
-              data-labeltype='2 oz Extract'
-              data-size='1.5" x 2.25"'
-              data-fits='Fits 2 oz Extract Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/Extract-06.jpg" class="card-img-top" alt="2 oz Extract" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">2 oz Extract</h5>
-      <p class="card-text label-type">2 oz Extract</p>
-      <p class="card-text size">1.5" x 2.25"</p>
-      <p class="card-text fits-container">Fits 2 oz Extract Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/Extract-06.jpg'
-              data-productname='2 oz Extract'
-              data-labeltype='2 oz Extract'
-              data-size='1.5" x 2.25"'
-              data-fits='Fits 2 oz Extract Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/Extract-07.jpg" class="card-img-top" alt="2 oz Extract" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">2 oz Extract</h5>
-      <p class="card-text label-type">2 oz Extract</p>
-      <p class="card-text size">1.5" x 2.25"</p>
-      <p class="card-text fits-container">Fits 2 oz Extract Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/Extract-07.jpg'
-              data-productname='2 oz Extract'
-              data-labeltype='2 oz Extract'
-              data-size='1.5" x 2.25"'
-              data-fits='Fits 2 oz Extract Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/Extract-08.jpg" class="card-img-top" alt="2 oz Extract" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">2 oz Extract</h5>
-      <p class="card-text label-type">2 oz Extract</p>
-      <p class="card-text size">1.5" x 2.25"</p>
-      <p class="card-text fits-container">Fits 2 oz Extract Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/Extract-08.jpg'
-              data-productname='2 oz Extract'
-              data-labeltype='2 oz Extract'
-              data-size='1.5" x 2.25"'
-              data-fits='Fits 2 oz Extract Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/Extract-09.jpg" class="card-img-top" alt="2 oz Extract" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">2 oz Extract</h5>
-      <p class="card-text label-type">2 oz Extract</p>
-      <p class="card-text size">1.5" x 2.25"</p>
-      <p class="card-text fits-container">Fits 2 oz Extract Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/Extract-09.jpg'
-              data-productname='2 oz Extract'
-              data-labeltype='2 oz Extract'
-              data-size='1.5" x 2.25"'
-              data-fits='Fits 2 oz Extract Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/Extract-10.jpg" class="card-img-top" alt="2 oz Extract" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">2 oz Extract</h5>
-      <p class="card-text label-type">2 oz Extract</p>
-      <p class="card-text size">1.5" x 2.25"</p>
-      <p class="card-text fits-container">Fits 2 oz Extract Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/Extract-10.jpg'
-              data-productname='2 oz Extract'
-              data-labeltype='2 oz Extract'
-              data-size='1.5" x 2.25"'
-              data-fits='Fits 2 oz Extract Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/Extract-11.jpg" class="card-img-top" alt="2 oz Extract" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">2 oz Extract</h5>
-      <p class="card-text label-type">2 oz Extract</p>
-      <p class="card-text size">1.5" x 2.25"</p>
-      <p class="card-text fits-container">Fits 2 oz Extract Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/Extract-11.jpg'
-              data-productname='2 oz Extract'
-              data-labeltype='2 oz Extract'
-              data-size='1.5" x 2.25"'
-              data-fits='Fits 2 oz Extract Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/Extract-12.jpg" class="card-img-top" alt="2 oz Extract" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">2 oz Extract</h5>
-      <p class="card-text label-type">2 oz Extract</p>
-      <p class="card-text size">1.5" x 2.25"</p>
-      <p class="card-text fits-container">Fits 2 oz Extract Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/Extract-12.jpg'
-              data-productname='2 oz Extract'
-              data-labeltype='2 oz Extract'
-              data-size='1.5" x 2.25"'
-              data-fits='Fits 2 oz Extract Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/Extract-13.jpg" class="card-img-top" alt="2 oz Extract" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">2 oz Extract</h5>
-      <p class="card-text label-type">2 oz Extract</p>
-      <p class="card-text size">1.5" x 2.25"</p>
-      <p class="card-text fits-container">Fits 2 oz Extract Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/Extract-13.jpg'
-              data-productname='2 oz Extract'
-              data-labeltype='2 oz Extract'
-              data-size='1.5" x 2.25"'
-              data-fits='Fits 2 oz Extract Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/Extract-14.jpg" class="card-img-top" alt="2 oz Extract" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">2 oz Extract</h5>
-      <p class="card-text label-type">2 oz Extract</p>
-      <p class="card-text size">1.5" x 2.25"</p>
-      <p class="card-text fits-container">Fits 2 oz Extract Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/Extract-14.jpg'
-              data-productname='2 oz Extract'
-              data-labeltype='2 oz Extract'
-              data-size='1.5" x 2.25"'
-              data-fits='Fits 2 oz Extract Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/Extract-15.jpg" class="card-img-top" alt="2 oz Extract" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">2 oz Extract</h5>
-      <p class="card-text label-type">2 oz Extract</p>
-      <p class="card-text size">1.5" x 2.25"</p>
-      <p class="card-text fits-container">Fits 2 oz Extract Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/Extract-15.jpg'
-              data-productname='2 oz Extract'
-              data-labeltype='2 oz Extract'
-              data-size='1.5" x 2.25"'
-              data-fits='Fits 2 oz Extract Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/Grapefruit 2 oz BR.jpg" class="card-img-top" alt="2 oz Boston Round" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">2 oz Boston Round</h5>
-      <p class="card-text label-type">2 oz Boston Round</p>
-      <p class="card-text size">1.5" x 2.25"</p>
-      <p class="card-text fits-container">Fits 2 oz Boston Round Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/Grapefruit 2 oz BR.jpg'
-              data-productname='2 oz Boston Round'
-              data-labeltype='2 oz Boston Round'
-              data-size='1.5" x 2.25"'
-              data-fits='Fits 2 oz Boston Round Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-  <div class="card h-100">
-    <img src="images/Label Thumbnails/1up/Made In Kitchen.jpg" class="card-img-top" alt="Extract Label" style="width: 100%; height: 200px; object-fit: cover;">
-    <div class="card-body text-center">
-      <h5 class="card-title">Extract Label</h5>
-      <p class="card-text label-type">Extract Label</p>
-      <p class="card-text size">2 oz</p>
-      <p class="card-text fits-container">Fits Extract Label Container</p>
-      <p class="card-text price">$0.65 / pc</p>
-      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#productModal"
-              data-image='images/Label Thumbnails/1up/Made In Kitchen.jpg'
-              data-productname='Extract Label'
-              data-labeltype='Extract Label'
-              data-size='2 oz'
-              data-fits='Fits Extract Label Container'
-              data-price='$0.65 / pc'>View Details</button>
-    </div>
-  </div>
-</div>
-
+      </div>
+    </main>
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p class="mb-0">© 2024 Mickey's Custom Labels. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Modal -->
+    <div aria-hidden="true" aria-labelledby="modalLabel" class="modal fade" id="productModal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Product Details</h5>
+            <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+              <span>×</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <img alt="Product Image" class="img-fluid" id="modalImage" src="" />
+            <h5 class="mt-3" id="modalProductName"></h5>
+            <p id="modalLabelType"></p>
+            <p id="modalSize"></p>
+            <p id="modalFits"></p>
+            <p id="modalPrice"></p>
           </div>
         </div>
       </div>
     </div>
-  </main>
-  
-  <!-- Footer Section -->
-  <footer class="bg-dark text-white py-4">
-    <div class="container text-center">
-      <p class="mb-0">&copy; 2024 Mickey's Custom Labels. All rights reserved.</p>
-    </div>
-  </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      // Some reference links
+      // https://webdesign.tutsplus.com/how-to-build-flexible-modal-dialogs-with-html-css-and-javascript--cms-33500t
+      // https://www.w3schools.com/howto/howto_css_modals.asp
+      // https://www.w3schools.com/bootstrap/bootstrap_ref_js_modal.asp
+      // https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/
+      // https://getbootstrap.com/docs/4.0/components/modal/
+      // https://www.geeksforgeeks.org/how-to-create-a-modal-box-using-html-css-and-javascript/
+      // https://medium.com/@nerdplusdog/a-how-to-guide-for-modal-boxes-with-javascript-html-and-css-6a49d063987e
 
-  <!-- Modal -->
-  <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalLabel">Product Details</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span>&times;</span>
-          </button>
-        </div>
-        <div class="modal-body text-center">
-          <img src="" id="modalImage" class="img-fluid" alt="Product Image">
-          <h5 id="modalProductName" class="mt-3"></h5>
-          <p id="modalLabelType"></p>
-          <p id="modalSize"></p>
-          <p id="modalFits"></p>
-          <p id="modalPrice"></p>
-        </div>
-      </div>
-    </div>
-  </div>
+      // Modal script
+      $("#productModal").on("show.bs.modal", function (event) {
+        var button = $(event.relatedTarget)
+        var image = button.data("image")
+        var productName = button.data("productname")
+        var labelType = button.data("labeltype")
+        var size = button.data("size")
+        var fits = button.data("fits")
+        var price = button.data("price")
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>
-    // Script to handle modal population
-    $('#productModal').on('show.bs.modal', function (event) {
-      var button = $(event.relatedTarget); // Button that triggered the modal
-      var image = button.data('image'); // Extract info from data-* attributes
-      var productName = button.data('productname');
-      var labelType = button.data('labeltype');
-      var size = button.data('size');
-      var fits = button.data('fits');
-      var price = button.data('price');
+        // Update the modal's content
+        var modal = $(this)
+        modal.find("#modalImage").attr("src", image)
+        modal.find("#modalProductName").text(productName)
+        modal.find("#modalLabelType").text(labelType)
+        modal.find("#modalSize").text(size)
+        modal.find("#modalFits").text(fits)
+        modal.find("#modalPrice").text(price)
+      })
+    </script>
 
-      // Update the modal's content
-      var modal = $(this);
-      modal.find('#modalImage').attr('src', image);
-      modal.find('#modalProductName').text(productName);
-      modal.find('#modalLabelType').text(labelType);
-      modal.find('#modalSize').text(size);
-      modal.find('#modalFits').text(fits);
-      modal.find('#modalPrice').text(price);
-    });
-  </script>
-</body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const categorySelect = document.getElementById("category")
+
+        // Filter products based on selected category
+        categorySelect.addEventListener("change", function () {
+          const selectedCategory = this.value.toLowerCase()
+          const cards = document.querySelectorAll(".card-container")
+
+          cards.forEach((card) => {
+            const labelType = card.querySelector(".label-type").textContent.toLowerCase()
+            // Show or hide cards -- Filter
+            if (selectedCategory === "all categories" || labelType === selectedCategory) {
+              card.style.display = "block" // Show card
+            } else {
+              card.style.display = "none" // Hide card
+            }
+          })
+        })
+      })
+    </script>
+  </body>
 </html>
