@@ -11,6 +11,7 @@ $secondary: $secondary-color;
 
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+@import "node_modules/bootstrap/scss/bootstrap";
 @import "contact";
 @import "products";
 @import "about";
