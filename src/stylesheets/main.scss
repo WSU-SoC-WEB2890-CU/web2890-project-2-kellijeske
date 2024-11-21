@@ -16,6 +16,26 @@ $secondary: $secondary-color;
 @import "products";
 @import "about";
 
+.btn-primary {
+  background-color: $primary;
+
+  &:hover {
+    background-color: darken($primary, 8%) !important;
+  }
+}
+.btn:focus,
+.btn:active {
+    outline: none; 
+    box-shadow: none;
+    background-color: darken($primary, 8%); 
+    border-color: $primary; 
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
 /* General Styling */
 body {
   font-family: "Lexend", sans-serif;
@@ -101,8 +121,7 @@ h4 {
   .btn {
     font-size: 1.1rem;
     padding: 12px 25px;
-    border-radius: 50px;
-    background-color: $primary-color;
+    background-color: $primary;
   }
 }
 
