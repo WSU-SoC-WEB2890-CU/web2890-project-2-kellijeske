@@ -1,0 +1,72 @@
+/* Products page styles */
+
+
+.products-page {
+  padding: 2rem 0;
+}
+
+/* Product Card Styling */
+.products-page {
+  padding: 2rem 0;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-body {
+  padding: 1.25rem;
+  background-color: #f9f9f9;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #6b6255;
+}
+
+.label-type,
+.size,
+.fits-container,
+.price {
+  margin-bottom: 0.5rem;
+}
+
+.btn-primary {
+  background-color: #6b6255;
+  border-color: #6b6255;
+}
+
+.btn-primary:hover {
+  background-color: darken(#6b6255, 10%);
+}
+
+/* Pagination Styling */
+.pagination .page-link {
+  color: #6b6255;
+}
+
+.pagination .page-link:hover {
+  color: #333;
+}

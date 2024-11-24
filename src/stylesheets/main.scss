@@ -1,3 +1,249 @@
-/* Your styles go here */
+/* Variables for colors */
+$primary-color: #aa0000;
+$secondary-color: #333;
+$light-background: #f9f9f9;
+$white: #fff;
+$dark-gray: #333;
+$light-gray: #ddd;
+
+$primary: $primary-color;
+$secondary: $secondary-color;
+
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "contact";
+@import "products";
+@import "about";
+
+.btn-primary {
+  background-color: $primary;
+
+  &:hover {
+    background-color: darken($primary, 8%) !important;
+  }
+}
+.btn:focus,
+.btn:active {
+    outline: none; 
+    box-shadow: none;
+    background-color: darken($primary, 8%); 
+    border-color: $primary; 
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+/* General Styling */
+body {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/* Header Styling */
+header {
+  background-color: $white;
+  border-bottom: 1px solid $light-gray;
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    margin-left: 16px;
+    text-transform: uppercase;
+  }
+}
+nav {
+  ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center !important;
+
+    li {
+      display: inline;
+      margin-left: 20px;
+      font-size: 0.8em;
+      font-weight: bold;
+
+      a {
+        color: $dark-gray;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+h4 {
+  font-size: 1rem;
+  margin-top: -10px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url("images/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  color: $white;
+  text-align: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  }
+
+  p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  }
+
+  .btn {
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    background-color: $primary;
+    border:$primary;
+  }
+}
+
+/* Categories Section */
+.categories {
+  padding: 50px 0;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .category-item {
+    img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      transition: transform 0.3s;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+/* How It Works Section */
+.how-it-works {
+  padding: 50px 0;
+  background-color: $light-background;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .col-md-4 {
+    i {
+      color: $primary-color;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: darken($primary-color, 15%);
+      }
+    }
+  }
+
+  h5 {
+    margin-top: 15px;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 50px 0;
+  background-color: $secondary-color;
+  color: $white;
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .btn-primary {
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+
+  .btn-outline-primary {
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: $white;
+    border-color: $white;
+
+    &:hover {
+      color: $primary-color;
+      background-color: $white;
+    }
+  }
+}
+
+/* Footer */
+footer {
+  background-color: $secondary-color;
+  color: $white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Product Item Hover and Click Effects */
+.product-item {
+  img {
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  &:active img {
+    transform: scale(0.97);
+    opacity: 0.9;
+  }
+}
